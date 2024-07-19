@@ -1,7 +1,9 @@
 import csv
 import os
 
-file_path = r'PyBank\Resources\budget_data.csv'
+file_path = os.path.join('PyBank', 'Resources', 'budget_data.csv')
+output_dir = os.path.join('PyBank', 'Analysis')
+output_file_path = os.path.join(output_dir, 'financial_analysis.txt')
 
 total_months = 0
 total = 0

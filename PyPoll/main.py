@@ -1,6 +1,8 @@
 import csv
+import os
 
-file_path = r'PyPoll\Resources\election_data.csv'
+file_path = os.path.join('PyPoll', 'Resources', 'election_data.csv')
+output_file = os.path.join('PyPoll', 'Analysis', 'election_results.txt')
 
 total_votes = 0
 candidate_votes = {}
